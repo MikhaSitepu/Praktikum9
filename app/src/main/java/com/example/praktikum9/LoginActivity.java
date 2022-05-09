@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
             if (task.isSuccessful() && task.getResult() != null) {
                 Toast.makeText(
                         this,
-                        "Login Berhasil!",
+                        "Login Berhasil!!",
                         Toast.LENGTH_LONG
                 ).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
