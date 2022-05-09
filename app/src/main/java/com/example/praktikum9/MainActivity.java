@@ -11,9 +11,9 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity {
     private TextView welcomeTextView, emailTextView, uidTextView;
-    private Button logOutButton;
+    private Button logOutButton, getDataButton;
     private FirebaseUser firebaseUser;
 
     @Override
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity  {
         displayProfile();
 
         logOutButton.setOnClickListener(view -> logOut());
+        getDataButton.setOnClickListener(view -> getData());
     }
 
     private void initComponent() {
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity  {
         emailTextView = findViewById(R.id.tv_email);
         uidTextView = findViewById(R.id.tv_uid);
         logOutButton = findViewById(R.id.btn_keluar);
+        getDataButton = findViewById(R.id.btn_lihatdata);
     }
 
     private void displayProfile() {
@@ -50,5 +52,9 @@ public class MainActivity extends AppCompatActivity  {
         ).show();
         startActivity(new Intent(this, LoginActivity.class));
         finish();
+    }
+
+    private void getData() {
+        startActivity(new Intent(this, Mahasiswa.class));
     }
 }

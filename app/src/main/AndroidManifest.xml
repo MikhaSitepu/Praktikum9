@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Praktikum9">
         <activity
-            android:name=".MainActivity2"
+            android:name=".UpdateMahasiswaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahMahasiswaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MahasiswaActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
