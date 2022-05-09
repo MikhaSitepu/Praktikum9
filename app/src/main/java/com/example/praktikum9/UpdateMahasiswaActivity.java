@@ -21,7 +21,7 @@ public class UpdateMahasiswaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activty_form_mahasiswa);
-
+        initComponent();
         String key = getIntent().getStringExtra("KEY");
         getAnggota(key);
 

@@ -55,6 +55,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getData() {
-        startActivity(new Intent(this, Mahasiswa.class));
+        startActivity(new Intent(this, MahasiswaActivity.class));
     }
 }

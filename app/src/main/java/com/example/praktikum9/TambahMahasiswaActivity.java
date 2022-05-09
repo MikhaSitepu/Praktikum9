@@ -38,6 +38,7 @@ public class TambahMahasiswaActivity extends AppCompatActivity {
     private void insertHandler() {
         String nama = namaEditText.getText().toString();
         String nim = nimEditText.getText().toString();
+        Toast.makeText(this, "test", Toast.LENGTH_SHORT).show();
         Mahasiswa mahasiswa = new Mahasiswa(nama, nim);
 
         mahasiswaDAO.insert(mahasiswa).addOnSuccessListener(success -> {
